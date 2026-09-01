@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #070706;
+  --color-cream: #f4f1ea;
+  --color-mint: #3ddc84;
+  --color-mint-ink: #082114;
+  --color-wash: #eafbee;
+  --color-card: rgb(255 255 255 / 0.03);
+  --color-line: rgb(255 255 255 / 0.1);
+  --color-muted: rgb(244 241 234 / 0.62);
+  --color-faint: rgb(244 241 234 / 0.42);
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino,
+    "Times New Roman", Times, serif;
+  --radius-card: 1.5rem;
+  --shadow-border: 0 0 0 1px rgb(255 255 255 / 0.08);
+  --shadow-border-hover: 0 0 0 1px rgb(255 255 255 / 0.14);
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    background: var(--color-ink);
+    color: var(--color-cream);
+    font-family: var(--font-sans);
+    color-scheme: dark;
+  }
+  select option {
+    background: var(--color-ink);
+    color: var(--color-cream);
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  img {
+    outline: 1px solid rgb(255 255 255 / 0.1);
+    outline-offset: -1px;
+  }
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+  .card-surface {
+    background: var(--color-card);
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-border);
+  }
+  .pill {
+    border-radius: 9999px;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee 36s linear infinite;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.rise {
+  animation: rise 500ms var(--ease-out-soft) both;
+}
+
+.rise-2 {
+  animation-delay: 80ms;
+}
+.rise-3 {
+  animation-delay: 160ms;
+}
+.rise-4 {
+  animation-delay: 240ms;
+}
+
+@keyframes ticker-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track,
+  .rise,
+  .rise-2,
+  .rise-3,
+  .rise-4 {
+    animation: none;
+  }
+}

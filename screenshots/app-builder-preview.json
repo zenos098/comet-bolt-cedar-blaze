@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Looply — Run marketing 24/7.",
+      "hasCanvas": false,
+      "bodyTextLen": 2170,
+      "bodyTextHash": "16484c7fbe7e7e68dadd2b1405564de96d8a145e019517ee1d7929338336a17b",
+      "bodyTextPrefix": "looply Features Pricing Examples Contact Use on web Get the app ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Looply — Run marketing 24/7.",
+      "hasCanvas": false,
+      "bodyTextLen": 2113,
+      "bodyTextHash": "cfce95da0c0be3ed6c13a70b37225bc0833e4d1af5df29fa25984fdef1097013",
+      "bodyTextPrefix": "looply AI MARKETING PARTNER Run marketing / 24/7. Looply keeps a",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

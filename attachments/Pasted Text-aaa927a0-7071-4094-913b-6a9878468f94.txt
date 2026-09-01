@@ -1,0 +1,145 @@
+Build a complete production-ready web SaaS named Looply. Do not call it Scalio. Do not copy Scalio logos, customer names, or trademarked copy. Recreate the category and UX: an AI marketing partner that runs posts, photoshoots, Reels, ads, replies, and a content calendar for independent businesses.
+
+Ship a working Next.js app I can run with npm install && npm run dev. No paid API keys. Use only free public APIs listed below.
+
+PRODUCT
+Tagline: Run marketing 24/7.
+One-liner: Looply keeps a business growing online — creating, posting, answering and advertising while the owner runs the shop.
+Audience: D2C / fashion / Amazon-Shopify sellers and local businesses (cafes, salons, gyms, clinics), especially India + English/Hindi.
+
+Principles:
+- No blank prompt box after setup. Brand is learned once.
+- Owner approves; the studio generates.
+- Credits meter every generation.
+- Honest limits: Reels are storyboards, not full AI-actor MP4s. Inbox drafts replies, does not connect live Instagram. Ads export creatives, do not spend ad budget.
+
+Demo account that must work on first load:
+- Email: demo@looply.app
+- Password: demo1234
+- Plan: growth, about 86 credits
+- Brand: Nimrah Atelier, boutique fashion, Delhi, English + Hindi, warm confident tone, offer “New linen drop + free hemming this week”, products linen sets / kurtas / silk shirts, colors ivory / forest green / warm gold
+- Two sample inbox messages already in the store
+
+STACK (do not change)
+- Next.js 14 App Router + TypeScript + Tailwind CSS
+- No database server. Persist to data/store.json via fs
+- Auth: scrypt password hashes + HMAC-signed httpOnly cookie looply_session (14 days)
+- AI text: POST https://text.pollinations.ai/ with { messages, model: "openai" }. Fallback GET https://text.pollinations.ai/{prompt}
+- AI images: https://image.pollinations.ai/prompt/{encodedPrompt}?width=&height=&nologo=true&enhance=true&seed=
+- Allow image.pollinations.ai and images.unsplash.com in next.config.mjs remotePatterns
+- No OpenAI, Stripe, Clerk, Prisma, or other paid keys
+
+DESIGN
+Dark cinematic marketing site. Studio is also dark.
+- Background #070706, text #f4f1ea, accent #3ddc84, button text #082114
+- Cards: rounded-3xl, border-white/10, bg-white/[0.03]
+- Buttons: pill rounded-full
+- Marketing nav: floating glass bar, top-4, backdrop-blur, max width 1440
+- Headlines: serif (Iowan Old Style / Palatino / Times)
+- Login/signup: light mint wash #eafbee to white, centered white card
+- Hero: full-bleed Unsplash cafe/shop photo + dark gradient
+- Infinite proof ticker under the hero
+
+ROUTES
+Marketing: /  /pricing  /examples  /contact  /login  /signup
+Studio (if /api/me is 401, redirect to /login):
+/studio
+/studio/onboarding
+/studio/calendar
+/studio/posts
+/studio/shoot
+/studio/reels
+/studio/ads
+/studio/inbox
+/studio/website
+
+LANDING SECTIONS IN ORDER
+1. Floating nav: looply + Features, Examples, Pricing, Contact, Use on web → /login, mint Get the app → /signup
+2. Hero: giant serif “Run marketing / 24/7.” slash in mint. Two CTAs. Line: Demo studio · demo@looply.app / demo1234
+3. Ticker: Nimrah Atelier, Farmer's India Market, Turning Heads Studio, Root & Reign, Jo's Space, Harbour Cafe, Elrose Clinic, Drip Drop Towing
+4. Features grid “The internet never stops. Now your marketing doesn’t either.” — It posts / It makes Reels / It shoots / It advertises / It answers / It gets you found
+5. Split panel “Learn the brand once. Approve the rest.”
+6. Three plan teaser cards
+7. Final CTA
+8. Footer. Note: not affiliated with Scalio. support@looply.app
+
+PRICING + CREDITS
+Start $0 / ₹0 / 20 credits
+Growth $19.99 / ₹1,499 / 100 credits
+Pro $39.99 / ₹2,999 / 250 credits
+Choosing a plan while logged in POSTs /api/plan and ADDS that plan’s credits (no real payment). If logged out, tell them to sign in.
+
+Costs: post 1, image 1, reel 4, ad 2, calendar 3, reply 1, review 1, website 5
+Return 402 if not enough credits.
+
+DATA (data/store.json)
+users: id, name, email, passwordHash, plan, credits, createdAt
+brands: userId, businessName, website, industry, city, language, tone, audience, offer, products, colors, onboarded, updatedAt
+generations: id, userId, kind, title, prompt, caption?, body?, imageUrl?, images?, platform?, status, scheduledFor?, createdAt
+messages: id, userId, channel, from, text, reply?, createdAt
+
+kind = post | image | reel | ad | calendar | reply | review | website
+status = draft | ready | scheduled | posted
+channel = instagram | whatsapp | google | facebook
+
+If the JSON file is missing on first read, seed demo user + brand + 2 messages and write the file.
+For demo login, accept demo@looply.app / demo1234 even if the hash does not verify.
+
+API
+POST /api/auth/signup { name, email, password } → free plan, 20 credits, set cookie
+POST /api/auth/login { email, password } → set cookie
+POST /api/auth/logout → clear cookie
+GET /api/me → { user, brand } or 401
+POST /api/brand → upsert brand
+GET /api/generations → newest first
+PATCH /api/generations { id, status, scheduledFor }
+POST /api/plan { plan }
+POST /api/generate/post { topic, platform } → caption + image
+POST /api/generate/image { brief, style } → still
+POST /api/generate/reel { topic } → title, hook, 4 beats, caption, voiceover + four 9:16 images 720x1280
+POST /api/generate/calendar { days } → 5–14 scheduled posts, default 7
+POST /api/generate/reply { text, channel, from, kind } → draft + save message
+POST /api/generate/ad { offer, platform } → copy + square image
+POST /api/generate/website → HERO/ABOUT/OFFER/PROOF/VISIT/CTA + hero image
+
+Every generate route: require session, check credits, inject brand into the prompt, deduct credits, save generation, return { item, credits } or { items, credits }.
+Return Pollinations image URLs. Do not store binary files.
+
+STUDIO UX
+Left sidebar: Home, Brand, Calendar, Posts, Shoot, Reels, Ads, Inbox, Website, Sign out
+Top bar: mint credits pill
+Each tool: title + honest limit line + form + result with image(s) and copy
+Submit label: “Generating… 8–20s”
+Studio home: 4 shortcut cards + recent work grid
+Onboarding fields: businessName, website, industry, city, language, tone, audience, offer, products, colors
+Login title: “AI Creative Studio”. Signup → /studio/onboarding. Login → /studio
+
+FILES TO CREATE
+app/layout.tsx, app/globals.css, app/page.tsx
+app/pricing/page.tsx, app/examples/page.tsx, app/contact/page.tsx
+app/login/page.tsx, app/signup/page.tsx
+app/studio/layout.tsx, app/studio/page.tsx
+app/studio/onboarding/page.tsx, calendar/page.tsx, posts/page.tsx, shoot/page.tsx, reels/page.tsx, ads/page.tsx, inbox/page.tsx, website/page.tsx
+app/api/auth/signup/login/logout/route.ts
+app/api/me/route.ts, brand/route.ts, generations/route.ts, plan/route.ts
+app/api/generate/post,image,reel,calendar,reply,ad,website /route.ts
+components/MarketingNav.tsx, Footer.tsx, StudioShell.tsx, ToolForm.tsx
+lib/types.ts, db.ts, auth.ts, ai.ts, credits.ts, spend.ts
+
+lib/ai.ts must export brandContext, generateText, imageUrl, and a loose JSON parser.
+
+COPY TONE
+Short, concrete, owner-to-operator. Mention city, price, offer, next step. Posts 80–140 words + \~8 hashtags. Replies max \~70 words.
+
+README
+Run commands, demo login, stack, table of real vs placeholder features.
+
+DONE WHEN
+- npm run dev serves the landing page
+- Demo login opens studio as Nimrah Atelier
+- Saving brand works
+- Post, shoot, reel, calendar, reply, ad, website each show output and decrement credits
+- Logged-out /studio goes to login
+- No paid keys anywhere
+
+Build the whole app now. Do not stop at a mock landing page.

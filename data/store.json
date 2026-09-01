@@ -1,0 +1,296 @@
+{
+  "users": [
+    {
+      "id": "user_demo",
+      "name": "Nimrah",
+      "email": "demo@looply.app",
+      "passwordHash": "seeded:demo",
+      "plan": "growth",
+      "credits": 80,
+      "createdAt": "2026-08-31T16:46:12.026Z"
+    }
+  ],
+  "brands": [
+    {
+      "userId": "user_demo",
+      "businessName": "Nimrah Atelier",
+      "website": "https://nimrahatelier.example",
+      "industry": "boutique fashion",
+      "city": "Delhi",
+      "language": "English + Hindi",
+      "tone": "warm confident",
+      "audience": "women who want linen and silk that actually fit",
+      "offer": "New linen drop + free hemming this week",
+      "products": "linen sets, kurtas, silk shirts",
+      "colors": "ivory, forest green, warm gold",
+      "onboarded": true,
+      "updatedAt": "2026-08-31T16:46:12.026Z"
+    }
+  ],
+  "generations": [
+    {
+      "id": "gen_mti6e3dd_bidsbz",
+      "userId": "user_demo",
+      "kind": "post",
+      "title": "Sunday walk-in for ivory linen set, size M",
+      "prompt": "Photorealistic editorial photograph, no text, no watermark, no logo, editorial product still, boutique interior, Sunday walk-in for ivory linen set, size M, linen sets, kurtas, silk shirts on a shop table, linen sets, kurtas, silk shirts in a boutique fashion, palette ivory, forest green, warm gold, set in Delhi, independent shop Nimrah Atelier, natural window light, 35mm, shallow depth of field, real material texture",
+      "caption": "Sunday walk-ins at Nimrah Atelier in Delhi: the ivory linen set in size M is on the rack, ready to try. We build linen sets for women who want linen and silk that actually fit—clean shoulders, real ease, no drowning in cloth. New linen drop is live, and free hemming runs this week so the hem hits exactly where you live in it. Come feel the ivory, move in it, decide in the mirror. Aaj size M try kar lo, bilkul fit. DM your Sunday window or walk straight in—we’ll hem it before you leave if it is the one.\n\n#NimrahAtelier #DelhiBoutique #IvoryLinen #LinenSet #FreeHemming #NewLinenDrop #DelhiFashion #LinenThatFits",
+      "imageUrl": "https://image.pollinations.ai/prompt/Photorealistic%20editorial%20photograph%2C%20no%20text%2C%20no%20watermark%2C%20no%20logo%2C%20editorial%20product%20still%2C%20boutique%20interior%2C%20Sunday%20walk-in%20for%20ivory%20linen%20set%2C%20size%20M%2C%20linen%20sets%2C%20kurtas%2C%20silk%20shirts%20on%20a%20shop%20table%2C%20linen%20sets%2C%20kurtas%2C%20silk%20shirts%20in%20a%20boutique%20fashion%2C%20palette%20ivory%2C%20forest%20green%2C%20warm%20gold%2C%20set%20in%20Delhi%2C%20independent%20shop%20Nimrah%20Atelier%2C%20natural%20window%20light%2C%2035mm%2C%20shallow%20depth%20of%20field%2C%20real%20material%20texture?width=1024&height=1024&nologo=true&enhance=true&seed=373102",
+      "platform": "instagram",
+      "status": "posted",
+      "createdAt": "2026-09-01T04:37:04.273Z",
+      "source": "grok",
+      "used": {
+        "businessName": "Nimrah Atelier",
+        "city": "Delhi",
+        "products": "linen sets (ivory)",
+        "offer": "New linen drop + free hemming this week",
+        "audience": "women who want linen and silk that actually fit"
+      },
+      "permalink": "/p/gen_mti6e3dd_bidsbz",
+      "postedTo": [
+        "instagram",
+        "facebook",
+        "google",
+        "whatsapp"
+      ],
+      "publishResults": [
+        {
+          "platform": "instagram",
+          "ok": true,
+          "url": "/p/gen_mti6e3dd_bidsbz",
+          "remote": false,
+          "postedAt": "2026-09-01T04:37:12.366Z"
+        },
+        {
+          "platform": "facebook",
+          "ok": true,
+          "url": "/p/gen_mti6e3dd_bidsbz",
+          "remote": false,
+          "postedAt": "2026-09-01T04:37:12.366Z"
+        },
+        {
+          "platform": "google",
+          "ok": true,
+          "url": "/p/gen_mti6e3dd_bidsbz",
+          "remote": false,
+          "postedAt": "2026-09-01T04:37:12.366Z"
+        },
+        {
+          "platform": "whatsapp",
+          "ok": true,
+          "url": "/p/gen_mti6e3dd_bidsbz",
+          "remote": false,
+          "postedAt": "2026-09-01T04:37:12.366Z"
+        }
+      ]
+    },
+    {
+      "id": "gen_mti6cxhv_tuljbi",
+      "userId": "user_demo",
+      "kind": "post",
+      "title": "Ivory linen set walk-in fittings this evening",
+      "prompt": "Photorealistic editorial photograph, no text, no watermark, no logo, editorial product still, boutique interior, Ivory linen set walk-in fittings this evening, linen sets, kurtas, silk shirts on a shop table, linen sets, kurtas, silk shirts in a boutique fashion, palette ivory, forest green, warm gold, set in Delhi, independent shop Nimrah Atelier, natural window light, 35mm, shallow depth of field, real material texture",
+      "caption": "Nimrah Atelier, Delhi. Ivory linen set walk-in fittings this evening.\n\nCut for women who want linen and silk that actually fit. We keep linen sets, kurtas, silk shirts on the rack — not a lookbook that never leaves the studio. New linen drop + free hemming this week. Come in, get measured, leave with something that sits right on the shoulder.\n\nNaya linen drop hai — is hafte hemming free. Size hold karwana ho to message karo.\n\nReply here or walk in this week. We'll hold a size if you message before Saturday.\n\n#NimrahAtelier #Delhi #boutiquefashion #ShopLocal #MadeToFit #ThisWeek #Atelier #D2C",
+      "imageUrl": "https://image.pollinations.ai/prompt/Photorealistic%20editorial%20photograph%2C%20no%20text%2C%20no%20watermark%2C%20no%20logo%2C%20editorial%20product%20still%2C%20boutique%20interior%2C%20Ivory%20linen%20set%20walk-in%20fittings%20this%20evening%2C%20linen%20sets%2C%20kurtas%2C%20silk%20shirts%20on%20a%20shop%20table%2C%20linen%20sets%2C%20kurtas%2C%20silk%20shirts%20in%20a%20boutique%20fashion%2C%20palette%20ivory%2C%20forest%20green%2C%20warm%20gold%2C%20set%20in%20Delhi%2C%20independent%20shop%20Nimrah%20Atelier%2C%20natural%20window%20light%2C%2035mm%2C%20shallow%20depth%20of%20field%2C%20real%20material%20texture?width=1024&height=1024&nologo=true&enhance=true&seed=502518",
+      "platform": "instagram",
+      "status": "ready",
+      "createdAt": "2026-09-01T04:36:10.003Z",
+      "source": "fallback",
+      "used": {
+        "businessName": "Nimrah Atelier",
+        "city": "Delhi",
+        "products": "linen sets, kurtas, silk shirts",
+        "offer": "New linen drop + free hemming this week",
+        "audience": "women who want linen and silk that actually fit"
+      }
+    },
+    {
+      "id": "gen_mti6b5vb_cch6jz",
+      "userId": "user_demo",
+      "kind": "post",
+      "title": "Forest green kurta set for Noida clients this weekend",
+      "prompt": "Photorealistic editorial photograph, no text, no watermark, no logo, editorial product still, boutique interior, Forest green kurta set for Noida clients this weekend, linen sets, kurtas, silk shirts on a shop table, linen sets, kurtas, silk shirts in a boutique fashion, palette ivory, forest green, warm gold, set in Delhi, independent shop Nimrah Atelier, natural window light, 35mm, shallow depth of field, real material texture",
+      "caption": "Nimrah Atelier, Delhi. Forest green kurta set for Noida clients this weekend.\n\nCut for women who want linen and silk that actually fit. We keep linen sets, kurtas, silk shirts on the rack — not a lookbook that never leaves the studio. New linen drop + free hemming this week. Come in, get measured, leave with something that sits right on the shoulder.\n\nNaya linen drop hai — is hafte hemming free. Size hold karwana ho to message karo.\n\nReply here or walk in this week. We'll hold a size if you message before Saturday.\n\n#NimrahAtelier #Delhi #boutiquefashion #ShopLocal #MadeToFit #ThisWeek #Atelier #D2C",
+      "imageUrl": "https://image.pollinations.ai/prompt/Photorealistic%20editorial%20photograph%2C%20no%20text%2C%20no%20watermark%2C%20no%20logo%2C%20editorial%20product%20still%2C%20boutique%20interior%2C%20Forest%20green%20kurta%20set%20for%20Noida%20clients%20this%20weekend%2C%20linen%20sets%2C%20kurtas%2C%20silk%20shirts%20on%20a%20shop%20table%2C%20linen%20sets%2C%20kurtas%2C%20silk%20shirts%20in%20a%20boutique%20fashion%2C%20palette%20ivory%2C%20forest%20green%2C%20warm%20gold%2C%20set%20in%20Delhi%2C%20independent%20shop%20Nimrah%20Atelier%2C%20natural%20window%20light%2C%2035mm%2C%20shallow%20depth%20of%20field%2C%20real%20material%20texture?width=1024&height=1024&nologo=true&enhance=true&seed=464399",
+      "platform": "instagram",
+      "status": "ready",
+      "createdAt": "2026-09-01T04:34:47.543Z",
+      "source": "fallback",
+      "used": {
+        "businessName": "Nimrah Atelier",
+        "city": "Delhi",
+        "products": "linen sets, kurtas, silk shirts",
+        "offer": "New linen drop + free hemming this week",
+        "audience": "women who want linen and silk that actually fit"
+      }
+    },
+    {
+      "id": "gen_mti5t0rg_klagob",
+      "userId": "user_demo",
+      "kind": "image",
+      "title": "linen sets, kurtas, silk shirts on a teak table, Delhi light",
+      "prompt": "Photorealistic editorial photograph, no text, no watermark, no logo, warm cinematic shop photography, linen sets, kurtas, silk shirts on a teak table, Delhi light, linen sets, kurtas, silk shirts in a boutique atelier, palette ivory, forest green, warm gold, set in Delhi, natural window light, 35mm, shallow depth of field, real fabric texture",
+      "imageUrl": "https://image.pollinations.ai/prompt/Photorealistic%20editorial%20photograph%2C%20no%20text%2C%20no%20watermark%2C%20no%20logo%2C%20warm%20cinematic%20shop%20photography%2C%20linen%20sets%2C%20kurtas%2C%20silk%20shirts%20on%20a%20teak%20table%2C%20Delhi%20light%2C%20linen%20sets%2C%20kurtas%2C%20silk%20shirts%20in%20a%20boutique%20atelier%2C%20palette%20ivory%2C%20forest%20green%2C%20warm%20gold%2C%20set%20in%20Delhi%2C%20natural%20window%20light%2C%2035mm%2C%20shallow%20depth%20of%20field%2C%20real%20fabric%20texture?width=1024&height=1280&nologo=true&enhance=true&seed=13573",
+      "status": "ready",
+      "createdAt": "2026-09-01T04:20:41.116Z"
+    },
+    {
+      "id": "gen_mti5rfer_7v8j1u",
+      "userId": "user_demo",
+      "kind": "post",
+      "title": "New linen drop + free hemming this week",
+      "prompt": "Photorealistic editorial photograph, no text, no watermark, no logo, editorial product still, boutique interior, New linen drop + free hemming this week, linen sets, kurtas, silk shirts on a shop table, linen sets, kurtas, silk shirts in a boutique atelier, palette ivory, forest green, warm gold, set in Delhi, natural window light, 35mm, shallow depth of field, real fabric texture",
+      "caption": "Nimrah Atelier in Delhi. New linen drop + free hemming this week.\n\nWe cut linen sets, kurtas, silk shirts for people who actually wear them — not for a lookbook that never leaves the studio. New linen drop + free hemming this week. Come in, get measured, leave with something that sits right on the shoulder.\n\nReply here or walk in this week. We'll hold a size if you message before Saturday.\n\n#NimrahAtelier #DelhiFashion #LinenDrop #MadeToFit #ShopLocal #D2CIndia #SlowFashion #Atelier",
+      "imageUrl": "https://image.pollinations.ai/prompt/Photorealistic%20editorial%20photograph%2C%20no%20text%2C%20no%20watermark%2C%20no%20logo%2C%20editorial%20product%20still%2C%20boutique%20interior%2C%20New%20linen%20drop%20%2B%20free%20hemming%20this%20week%2C%20linen%20sets%2C%20kurtas%2C%20silk%20shirts%20on%20a%20shop%20table%2C%20linen%20sets%2C%20kurtas%2C%20silk%20shirts%20in%20a%20boutique%20atelier%2C%20palette%20ivory%2C%20forest%20green%2C%20warm%20gold%2C%20set%20in%20Delhi%2C%20natural%20window%20light%2C%2035mm%2C%20shallow%20depth%20of%20field%2C%20real%20fabric%20texture?width=1024&height=1024&nologo=true&enhance=true&seed=872918",
+      "platform": "instagram",
+      "status": "ready",
+      "createdAt": "2026-09-01T04:19:26.787Z"
+    },
+    {
+      "id": "gen_mthhalfv_zvfmuu",
+      "userId": "user_demo",
+      "kind": "reply",
+      "title": "Reply to ananya.k",
+      "prompt": "Do you ship the forest green kurta set to Noida?",
+      "caption": "Hi, this is Nimrah Atelier in Delhi. Yes — New linen drop + free hemming this week. If you share a size and area we can hold a piece and confirm hemming. WhatsApp us a photo of the listing you mean and we'll reply with availability today.",
+      "body": "{\"id\":\"msg_mthhalfu_2wq913\",\"userId\":\"user_demo\",\"channel\":\"instagram\",\"from\":\"ananya.k\",\"text\":\"Do you ship the forest green kurta set to Noida?\",\"reply\":\"Hi, this is Nimrah Atelier in Delhi. Yes — New linen drop + free hemming this week. If you share a size and area we can hold a piece and confirm hemming. WhatsApp us a photo of the listing you mean and we'll reply with availability today.\",\"createdAt\":\"2026-08-31T16:54:30.666Z\"}",
+      "platform": "instagram",
+      "status": "draft",
+      "createdAt": "2026-08-31T16:54:30.667Z"
+    },
+    {
+      "id": "gen_mthh6fxt_6eaxuv",
+      "userId": "user_demo",
+      "kind": "post",
+      "title": "New linen drop + free hemming this week",
+      "prompt": "Photorealistic editorial photograph, no text, no watermark, no logo, editorial product still, boutique interior, New linen drop + free hemming this week, linen sets, kurtas, silk shirts on a shop table, linen sets, kurtas, silk shirts in a boutique atelier, palette ivory, forest green, warm gold, set in Delhi, natural window light, 35mm, shallow depth of field, real fabric texture",
+      "caption": "Nimrah Atelier in Delhi. New linen drop + free hemming this week.\n\nWe cut linen sets, kurtas, silk shirts for people who actually wear them — not for a lookbook that never leaves the studio. New linen drop + free hemming this week. Come in, get measured, leave with something that sits right on the shoulder.\n\nReply here or walk in this week. We'll hold a size if you message before Saturday.\n\n#NimrahAtelier #DelhiFashion #LinenDrop #MadeToFit #ShopLocal #D2CIndia #SlowFashion #Atelier",
+      "imageUrl": "https://image.pollinations.ai/prompt/Photorealistic%20editorial%20photograph%2C%20no%20text%2C%20no%20watermark%2C%20no%20logo%2C%20editorial%20product%20still%2C%20boutique%20interior%2C%20New%20linen%20drop%20%2B%20free%20hemming%20this%20week%2C%20linen%20sets%2C%20kurtas%2C%20silk%20shirts%20on%20a%20shop%20table%2C%20linen%20sets%2C%20kurtas%2C%20silk%20shirts%20in%20a%20boutique%20atelier%2C%20palette%20ivory%2C%20forest%20green%2C%20warm%20gold%2C%20set%20in%20Delhi%2C%20natural%20window%20light%2C%2035mm%2C%20shallow%20depth%20of%20field%2C%20real%20fabric%20texture?width=1024&height=1024&nologo=true&enhance=true&seed=88700",
+      "platform": "instagram",
+      "status": "ready",
+      "createdAt": "2026-08-31T16:51:16.913Z"
+    },
+    {
+      "id": "gen_mthh38fn_2qy7ul",
+      "userId": "user_demo",
+      "kind": "image",
+      "title": "ivory linen set on a teak table",
+      "prompt": "Photorealistic editorial photograph, no text, no watermark, no logo., warm shop photography, ivory linen set on a teak table, linen sets, kurtas, silk shirts in a boutique atelier, palette ivory, forest green, warm gold, set in Delhi, natural window light, 35mm, shallow depth of field, real fabric texture",
+      "imageUrl": "https://image.pollinations.ai/prompt/Photorealistic%20editorial%20photograph%2C%20no%20text%2C%20no%20watermark%2C%20no%20logo.%2C%20warm%20shop%20photography%2C%20ivory%20linen%20set%20on%20a%20teak%20table%2C%20linen%20sets%2C%20kurtas%2C%20silk%20shirts%20in%20a%20boutique%20atelier%2C%20palette%20ivory%2C%20forest%20green%2C%20warm%20gold%2C%20set%20in%20Delhi%2C%20natural%20window%20light%2C%2035mm%2C%20shallow%20depth%20of%20field%2C%20real%20fabric%20texture?width=1024&height=1280&nologo=true&enhance=true&seed=303117",
+      "status": "ready",
+      "createdAt": "2026-08-31T16:48:47.219Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg_mthhalfu_2wq913",
+      "userId": "user_demo",
+      "channel": "instagram",
+      "from": "ananya.k",
+      "text": "Do you ship the forest green kurta set to Noida?",
+      "reply": "Hi, this is Nimrah Atelier in Delhi. Yes — New linen drop + free hemming this week. If you share a size and area we can hold a piece and confirm hemming. WhatsApp us a photo of the listing you mean and we'll reply with availability today.",
+      "createdAt": "2026-08-31T16:54:30.666Z"
+    },
+    {
+      "id": "msg_demo_1",
+      "userId": "user_demo",
+      "channel": "instagram",
+      "from": "ananya.k",
+      "text": "Do you ship the forest green kurta set to Noida, and can you hem it to 5'2\"?",
+      "createdAt": "2026-08-31T16:46:12.026Z"
+    },
+    {
+      "id": "msg_demo_2",
+      "userId": "user_demo",
+      "channel": "whatsapp",
+      "from": "+91 98111 44021",
+      "text": "Hi, I saw the linen drop. Do you have the ivory set in size M, and is hemming really free this week?",
+      "createdAt": "2026-08-31T16:46:12.026Z"
+    }
+  ],
+  "accounts": [
+    {
+      "id": "acc_demo_ig",
+      "userId": "user_demo",
+      "platform": "instagram",
+      "handle": "@nimrahatelier",
+      "displayName": "Nimrah Atelier",
+      "connected": true,
+      "connectedAt": "2026-09-01T04:29:12.652Z"
+    },
+    {
+      "id": "acc_demo_fb",
+      "userId": "user_demo",
+      "platform": "facebook",
+      "handle": "Nimrah Atelier",
+      "displayName": "Nimrah Atelier",
+      "connected": true,
+      "connectedAt": "2026-09-01T04:29:12.652Z"
+    },
+    {
+      "id": "acc_demo_g",
+      "userId": "user_demo",
+      "platform": "google",
+      "handle": "Nimrah Atelier · Delhi",
+      "displayName": "Google Business",
+      "connected": true,
+      "connectedAt": "2026-09-01T04:29:12.652Z"
+    },
+    {
+      "id": "acc_demo_wa",
+      "userId": "user_demo",
+      "platform": "whatsapp",
+      "handle": "+91 11 4000 2211",
+      "displayName": "WhatsApp Business",
+      "connected": true,
+      "connectedAt": "2026-09-01T04:29:12.652Z"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "job_mti6e9m7_oo8u1a",
+      "userId": "user_demo",
+      "generationId": "gen_mti6e3dd_bidsbz",
+      "platforms": [
+        "instagram",
+        "facebook",
+        "google",
+        "whatsapp"
+      ],
+      "status": "posted",
+      "results": [
+        {
+          "platform": "instagram",
+          "ok": true,
+          "url": "/p/gen_mti6e3dd_bidsbz",
+          "remote": false,
+          "postedAt": "2026-09-01T04:37:12.366Z"
+        },
+        {
+          "platform": "facebook",
+          "ok": true,
+          "url": "/p/gen_mti6e3dd_bidsbz",
+          "remote": false,
+          "postedAt": "2026-09-01T04:37:12.366Z"
+        },
+        {
+          "platform": "google",
+          "ok": true,
+          "url": "/p/gen_mti6e3dd_bidsbz",
+          "remote": false,
+          "postedAt": "2026-09-01T04:37:12.366Z"
+        },
+        {
+          "platform": "whatsapp",
+          "ok": true,
+          "url": "/p/gen_mti6e3dd_bidsbz",
+          "remote": false,
+          "postedAt": "2026-09-01T04:37:12.366Z"
+        }
+      ],
+      "createdAt": "2026-09-01T04:37:12.366Z",
+      "updatedAt": "2026-09-01T04:37:12.366Z"
+    }
+  ]
+}
